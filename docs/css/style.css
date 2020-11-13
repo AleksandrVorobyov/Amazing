@@ -1097,6 +1097,10 @@ body.lock {
     font-size: 26px;
   }
 
+  .footer {
+    padding: 95px 15px 125px;
+  }
+
   .footer__wrapper {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1116,6 +1120,17 @@ body.lock {
 
   .footer__column + .footer__column {
     margin-top: 60px;
+  }
+
+  .footer__banner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1165,6 +1180,13 @@ body.lock {
   .banners__link {
     font-size: 16px;
     letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 340px) {
+  .footer__link--banner:last-child {
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
 
