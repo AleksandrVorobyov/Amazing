@@ -1,0 +1,37 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0 0;
+    font-family: "Fira Sans";
+    user-select: none;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.mw-580 {
+    max-width: 580px;
+}
+
+.mw-280 {
+    max-width: 280px;
+}
+
+.mw-180 {
+    max-width: 180px;
+    min-width: 180px;
+}

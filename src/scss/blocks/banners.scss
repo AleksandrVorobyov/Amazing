@@ -1,0 +1,113 @@
+.banners {
+    position: relative;
+    display: flex;
+    height: 515px;
+    max-height: 515px;
+    overflow: hidden;
+}
+
+.banners__left {
+    background-color: rgb(46, 189, 89);
+    flex: 50%;
+    height: 100%;
+    padding: 130px 70px;
+}
+
+.banners__spotify {
+    max-width: 500px;
+    float: right;
+}
+
+.banners__title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 24px;
+    color: rgb(249, 249, 249);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.banners__text {
+    margin: 0;
+    margin-bottom: 35px;
+    font-size: 36px;
+    color: rgb(249, 249, 249);
+    line-height: 1.2;
+    text-align: left;
+    font-weight: 200;
+}
+
+.banners__link {
+    display: inline-block;
+    padding: 18px 25px;
+    font-size: 18px;
+    letter-spacing: 3.6px;
+    color: rgb(249, 249, 249);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    transition: .4s ease-in;
+
+    &:hover {
+        color: rgb(248, 108, 9);
+        border-color: rgb(248, 108, 9);
+    }
+}
+
+.banners__right {
+    background-color: rgb(40, 43, 47);
+    flex: 50%;
+    height: 100%;
+    padding: 130px 70px;
+}
+
+.banners__itunes {
+    max-width: 450px;
+}
+
+@media (max-width: 950px) {
+    .banners__left {
+        padding: 70px 30px;
+    }
+
+    .banners__right {
+        padding: 70px 30px;
+    }
+}
+
+@media (max-width: 750px) {
+    .banners {
+        flex-direction: column;
+        height: auto;
+        max-height: 100%;
+    }
+
+    .banners__left {
+        padding: 100px 30px 100px 30px;
+    }
+
+    .banners__spotify {
+        float: none;
+    }
+
+    .banners__right {
+        padding: 100px 30px 100px 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .banners__text {
+        font-size: 26px;
+    }
+
+    .banners__link {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+}
